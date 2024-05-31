@@ -10,12 +10,12 @@ services:
     volumes:
       - /dev/bus/usb:/dev/bus/usb # for Coral USB
       - /etc/localtime:/etc/localtime:ro
-      - /DATA/AppData/frigate/config:/config
-      - /DATA/AppData/frigate/media:/media
+      - /data/DATA/AppData/frigate/config:/config
+      - /data/DATA/AppData/frigate/media:/media
     ports:
       - "5000:5000" # Web UI
       - "8554:8554" # RTSP feeds
       - "8555:8555/tcp" # WebRTC over tcp
       - "8555:8555/udp" # WebRTC over udp
     environment:
-      - FRIGATE_RTSP_PASSWORD=change_password
+      - FRIGATE_RTSP_PASSWORD=CosmoTheYorkie
